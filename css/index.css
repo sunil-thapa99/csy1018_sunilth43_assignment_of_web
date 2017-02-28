@@ -4,6 +4,9 @@
 	font-family: 'Archivo Narrow', sans-serif;
 
 }
+h1,h2,h3,h4,h5,h6{
+	padding: 1%;
+}
 section img{
 	width: 250px;
 	height: 400px;
@@ -49,4 +52,46 @@ section img{
 	background-color: #FEE9EB;
 	text-decoration: underline;
 	color: #111;
+}
+footer{
+	background: #7C97A2;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+.social_media{
+	width: 50%;
+	padding: 3%;
+}
+.media{
+	margin-left: 100px;
+	display: flex;
+	flex-direction: column;
+}
+.media a{
+	width: 60px;
+}
+.media img{
+	width: 50px;
+	height: 50px;
+	padding-left: 20px;
+}
+.media> #twitter{
+	padding-left: 50px;
+}
+.media> #linkedin{
+	padding-left: 100px;
+}
+.media> #instagram{
+	padding-left: 150px;
+}
+.map{
+	width: 40%;
+	padding: 1%;
+}
+.map iframe{
+	width: 400px; 
+	height:300px;
+	border: 2px solid #444AFF;
+	border-radius: 10px; 
 }
