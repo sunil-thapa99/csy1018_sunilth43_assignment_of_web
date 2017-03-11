@@ -1,3 +1,4 @@
+/*This is common css for all four html file*/
 *{
 	margin: 0;
 	padding: 0;
@@ -6,26 +7,56 @@
 }
 h1,h2,h3,h4,h5,h6{
 	padding: 1%;
+	color: #99979A;
 }
-section img{
-	width: 250px;
-	height: 400px;
+p{
+	font-size: 1.5625em;
+	font-weight: bold;
+	color: #555;
 }
-.top_bar{
-	display: inline-flex;
-	flex-direction: row;
-	background: #AAA;
+body{
 	width: 100%;
 }
+.top_bar{ 
+	/*  This is for header part*/
+	display: inline-flex;
+	flex-direction: row;
+	width: 100%;
+	background: #1A3441;
+}
 .logo{
+	/*This is just to look web page more attractive made by myself using photoshop cs6*/
 	width: 50%;
 	padding: 0;
 }
-.logo> img{
-	width: 100px;
-	height: 150px;
-	padding-left: 20%;
+.logo>img{
+	width: 9.375em;
+	padding-left: 15%;
+	height: 100%;
+	/*This is to animate my designed logo*/
+	animation: sunil 3s linear infinite alternate;
 }
+@keyframes sunil{
+	0%{
+		transform: translateX(20%) rotateX(0deg);
+	}
+	25%{
+		transform: translateX(40%) rotateX(90deg);
+	}
+	50%{
+		transform: translateX(60%) rotateX(180deg);
+	}
+	75%{
+		transform: translateX(80%) rotateX(270deg);
+	}
+	100%{
+		transform: translateX(100%) rotateX(360deg);
+	}
+}
+header{
+	height: 9.375em;
+}
+/*Now designing looks for navigations to look attractive and user-friendly*/
 .navigation{
 	width: 47%;
 }
@@ -35,63 +66,196 @@ section img{
 }
 .navigation ul li{
 	list-style: none;
-	height: 150px;
+	height:9.275em;
 }
 .navigation ul li a{
-	padding: 30px;
-	padding-top: 116px;
+	padding: 1.875em;
+	padding-top: 7.733em;
 	padding-bottom: 0;
 	text-decoration: none;
 	line-height: 4em;
-	font-size: 30px;
-	color: #007F7F;
+	font-size: 1.875em;
+	color: #fff;
 }
+/*This adds more function when cursor is hovered to navigations*/
 .navigation  ul li:hover,
 .navigation ul li a:hover
  {
-	background-color: #FEE9EB;
+	background-color: #D7937A;
 	text-decoration: underline;
 	color: #111;
+	cursor: pointer;
+	text-shadow: -0.1875em 0.1875em 0.3125em #393939;
+}
+.navigation ul li:hover{
+	transform: translateY(0.3125em);
+	transition: transform 0.6s ease;
+	box-shadow: -0.25em -0.25em 0.25em #e9e9e9;
+}
+.navigation ul li#onlink{
+	background: #0AF;
+	color: #222;
+}
+.navigation ul li#onlink:hover, 
+.navigation ul li#onlink a:hover{
+	background: #D7D1AA;
 }
 footer{
-	background: #7C97A2;
+	background: #1A3441;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
+	margin: 0 auto;
 }
 .social_media{
-	width: 50%;
+	width: 20%;
 	padding: 3%;
+	border-right: 0.1875em groove #684E2D;
 }
+/*THrough this section anyone can contact me in social medias like facebook, twitter, instagram, and so on*/
 .media{
-	margin-left: 100px;
+	margin-left: 6.25em;
 	display: flex;
 	flex-direction: column;
 }
 .media a{
-	width: 60px;
+	width: 3.75em;
 }
 .media img{
-	width: 50px;
-	height: 50px;
-	padding-left: 20px;
+	width: 3.125em;
+	height: 3.125em;
+	padding-left: 1.25em;
 }
-.media> #twitter{
-	padding-left: 50px;
+/*Exapanding facebook logo when hovering over it*/
+.media>#facebook:hover{
+	transform: scale(1.5, 1.5);
+	transition: transform 0.6s ease;
 }
-.media> #linkedin{
-	padding-left: 100px;
+/*Rotating clockwise twitter logo when hovering over it*/
+.media>#twitter:hover{
+	transform: rotate(360deg);
+	transition: transform 1.5s ease;
 }
-.media> #instagram{
-	padding-left: 150px;
+/*Rotating anti-clockwise linkedin logo when hovering over it*/
+.media> #linkedin:hover{
+	transform: rotate(-360deg);
+	transition: transform 1.5s ease-in-out;
 }
+/*Bending intagram logo when hovering over it*/
+.media> #instagram:hover{
+	transform: skew(-20deg, 20deg);
+	transition: transform 1s ease;
+}
+.news{
+	width: 35%;
+	border-right: 0.1875em groove #684E2D;
+	padding: 1%;
+	text-align: center;
+}
+.news h3{
+	font-size: 1.5625em;
+}
+.news h5{
+	text-align: right;
+}
+.news ul li{
+	list-style: none;
+	margin-bottom: 1%;
+}
+.news ul li a{
+	text-decoration: none;
+	color: #99979A;
+	font-size: 1.25em;
+}
+.news ul li a:hover{
+	font-size: 1.4375em;
+	text-shadow: 0.3125em 0.3125em 0.3125em red;
+	text-decoration: underline;
+}
+/*This locates mine current place*/
 .map{
 	width: 40%;
 	padding: 1%;
 }
-.map iframe{
-	width: 400px; 
-	height:300px;
-	border: 2px solid #444AFF;
-	border-radius: 10px; 
+.map p{
+	color: #ED8C1F;
+	padding: 1%;
+	text-align: left;
 }
+.map iframe{
+	width: 70%; 
+	height:12.5em;
+	margin-left: 20%;
+	border: 0.125em solid #444AFF;
+	box-shadow: -0.625em 0.3125em 0.3125em #111;
+}
+.copyright{
+	text-align: center;
+	background: #FEE9EB;
+}
+/*This is css for index.html*/
+section{
+	width: 100%;
+	background: #aaa;
+}
+.me{
+	text-align: center;
+	width: 98%;
+	text-align: center;
+	padding: 1%;
+	border-bottom: 0.1875em groove #ddd;
+}
+.me img{
+	border-radius: 100%;
+	width: 12.5em;
+	height: 18.75em;
+	padding:1%;
+}
+.me p{
+	width: 95%;
+	margin: auto;
+	text-align: center;
+}
+.linking{
+	display: inline-flex;
+	flex-direction: row;
+	width: 100%;
+}
+.biolink{
+	width: 50%;
+	display: inline-flex;
+	flex-direction: row;
+}
+.biolink a:hover{
+	transform: rotate(360deg);
+	transition: transform 1s ease-in-out;
+}
+.biolink a img{
+	width: 15.625em;
+	height: 15.625em;
+}
+.biolink p{
+	margin: auto 0;
+	padding-left: 5%;
+	text-align: center;
+}
+.cvlink{
+	width: 50%;
+	display: inline-flex;
+	flex-direction: row;
+	border-left: 0.1875em groove #bbb;
+}
+.cvlink a img{
+	width: 15.625em;
+	height: 15.625em;
+}
+.cvlink p{
+	margin: auto 0;
+	padding-left: 5%;
+	text-align: center;
+}
+.cvlink a:hover{
+	transform: rotate(360deg);
+	transition: transform 1s ease-in-out;
+}
+/*This is css for bio.html*/
