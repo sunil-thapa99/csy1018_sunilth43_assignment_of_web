@@ -356,6 +356,9 @@ footer{
 }
 .me3 img{
 	border-radius: 10px;
+}	
+.me3 img:hover{
+	cursor: pointer;
 	animation: sunilthapa 1s linear;
 }
 @keyframes sunilthapa{
