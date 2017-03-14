@@ -100,6 +100,10 @@ header{
 .navigation ul li#onlink a:hover{
 	background: #D7D1AA;
 }
+section{
+	width: 100%;
+	background: #aaa;
+}
 footer{
 	background: #1A3441;
 	width: 100%;
@@ -143,7 +147,7 @@ footer{
 }
 /*Bending intagram logo when hovering over it*/
 .media> #instagram:hover{
-	transform: skew(-20deg, 20deg);
+	transform: skew(-30deg, 30deg);
 	transition: transform 1s ease;
 }
 .news{
@@ -194,10 +198,6 @@ footer{
 	background: #FEE9EB;
 }
 /*This is css for index.html*/
-section{
-	width: 100%;
-	background: #aaa;
-}
 .me{
 	text-align: center;
 	width: 98%;
@@ -211,16 +211,29 @@ section{
 	height: 18.75em;
 	padding:1%;
 }
+.me img:hover{
+	animation: sunilt 2s linear;
+}
+@keyframes sunilt{
+	0%{
+		transform: rotateY(0deg);
+	}
+	100%{
+		transform: rotateY(360deg);
+	}
+}
 .me p{
 	width: 95%;
 	margin: auto;
 	text-align: center;
 }
+/*Linking is class that contains link to biography and cv*/
 .linking{
 	display: inline-flex;
 	flex-direction: row;
 	width: 100%;
 }
+/*Biolink is class that links to bio.html*/
 .biolink{
 	width: 50%;
 	display: inline-flex;
@@ -239,6 +252,7 @@ section{
 	padding-left: 5%;
 	text-align: center;
 }
+/*cvlink is class that links to cv.html*/
 .cvlink{
 	width: 50%;
 	display: inline-flex;
@@ -258,4 +272,165 @@ section{
 	transform: rotate(360deg);
 	transition: transform 1s ease-in-out;
 }
-/*This is css for bio.html*/
+/*This is css for cv.html*/
+
+.section h3{
+	font-size: 1.6em;
+	color: #333;
+}
+.section h4{
+	font-size: 1.4em;
+	color: #444; 
+}
+.section p{
+	font-size: 1.25em;
+	padding: 1%;
+}
+.section1{
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 95%;
+	margin-top: 2%;
+}
+.detail{
+	width: 33%;
+}
+.detail img{
+	border-radius: 100%;
+	width: 12.5em;
+	height: 18.75em;
+}
+.detail img:hover{
+	transform: scale(2,2);
+	transition: transform 0.8s ease-in-out;
+	border-radius: 0;
+	box-shadow: 0.25em 0.25em 0.25em #111;
+}
+.education{
+	width: 33%;
+	margin: 5% auto;
+}
+.education li{
+	list-style: square;
+	font-size: 1.15em;
+	padding: 0.6%;
+}
+.professional_experience{
+	width: 30%;
+	margin-top: 5%;
+}
+.section2{
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 2% 0 2% 0;
+}
+.skills{
+	width: 45%;
+}
+.skills h3,
+.skills li{
+	width: 50%;
+	margin: 0 auto;
+}
+.skills li{
+	list-style: circle;	
+	font-size: 1.15em;
+	padding: 0.3%; 
+}
+.activity{
+	width: 45%;
+}
+/*This is for contact*/
+.section_contact{
+	width: 100%;
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.me3{
+	width: 25%;
+	height: 25em;
+	padding: 2% 5% 2% 0%;
+}
+.me3 img{
+	border-radius: 10px;
+	animation: sunilthapa 1s linear;
+}
+@keyframes sunilthapa{
+	0%{
+		transform: scale(1,1);
+		transition: transform ease;
+	}
+	25%{
+		transform: scale(0,0);
+		transition: transform ease;
+		box-shadow: 0.3em 0.3em 0.3em #000;
+	}
+	50%{
+		transform: scale(1.5,1.5);
+		transition: transform ease;
+		box-shadow: 0.8em 0.8em 0.8em #000;
+	}
+	100%{
+		transform: scale(1,1);
+		transition: transform ease;
+	}
+}
+.form{
+	margin: 0 auto;
+	width: 50%;
+}
+.form p{
+	color: #222;
+	padding: 1%;
+}
+label{
+	font-size: 1.5em;
+	color: #A34;
+}
+input{
+	width: 75%;
+	height: 3em;
+	border-radius: 0.8em;
+	border-color: #FEE9EB;
+	font-size: 1em;
+	padding-left: 1em;
+}
+input:focus,
+textarea:focus{
+	background: #A5AAD7;
+	border-color: #0AC986;
+	color: #000; 
+}
+textarea{
+	border-radius: 0.8em;
+	padding: 1% 1%;
+	width: 75%;
+	margin: 2% 0;
+	border: 0.2em groove #FEE9EB;
+	height: 12.5em;
+	font-size: 1em;
+}
+input[type="submit"]{
+	width: 25%;
+	height: 3.125em;
+	background: #0AC986;
+	font-size: 1em;
+	color: white;
+	outline: none;
+	border-radius: 0.8em;
+	border: 0;
+	cursor: pointer; 
+	padding: 1em 0.8em;
+	margin-left: 25%;
+	margin-bottom: 2em; 
+}
+#submit:hover{
+	box-shadow:0.3125em 0.3125em 0.3125em #111;
+	transform: translateY(-0.4em);
+	transition: transform 0.6s ease;
+	background: #fff;
+	color: #0AC986;
+}
