@@ -111,8 +111,13 @@ footer{
 	flex-direction: row;
 	margin: 0 auto;
 }
+.footer{
+	width: 55%;
+	display: inline-flex;
+	flex-direction: row;
+}
 .social_media{
-	width: 20%;
+	width: 40%;
 	padding: 3%;
 	border-right: 0.1875em groove #684E2D;
 }
@@ -151,7 +156,7 @@ footer{
 	transition: transform 1s ease;
 }
 .news{
-	width: 35%;
+	width: 55%;
 	border-right: 0.1875em groove #684E2D;
 	padding: 1%;
 	text-align: center;
@@ -197,6 +202,77 @@ footer{
 	text-align: center;
 	background: #FEE9EB;
 }
+/*Making page responsive*/
+@media only screen and (max-width: 1200px){
+	.top_bar{
+		display: inline-block;
+	}
+	.logo{
+		width: 100%;
+	}
+	.logo img{
+		padding-left: 20%;
+	}
+	.navigation{
+		width: 100%;
+	}
+	.navigation ul{
+		display: flex;
+		flex-direction: row-reverse;
+	}
+	.navigation ul li{
+		padding-left: 10%;
+	}
+	.navigation ul li a:hover{
+		background: none;
+	}
+	.navigation ul li#onlink a:hover{
+		background: none;
+	}
+
+}
+@media only screen and (max-width: 1200px){
+	footer{
+		display: inline-block;
+	}
+	.footer{
+		width: 100%;
+		border-bottom: 0.1875em groove #684E2D;
+	}
+	.news{
+		padding-right: 3%;
+		border:none;
+	}
+	.map{
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 900px){
+	.navigation ul li{
+		padding-left: 0;
+	} 
+}
+@media only screen and (max-width: 700px){
+	.navigation ul{
+		display: inline-flex;
+		flex-direction: column-reverse;
+		width: 100%;
+	}
+	.navigation ul li{
+		width: 100%;
+	}
+	.footer{
+		display: block;
+	}
+	.news{
+		width: 100%;
+	}
+	.social_media{
+		width: 100%;
+		border-bottom: 0.1875em groove #684E2D;
+
+	}
+}	
 /*This is css for index.html*/
 .me{
 	text-align: center;
@@ -208,7 +284,6 @@ footer{
 .me img{
 	border-radius: 100%;
 	width: 12.5em;
-	height: 18.75em;
 	padding:1%;
 }
 .me img:hover{
@@ -271,6 +346,25 @@ footer{
 .cvlink a:hover{
 	transform: rotate(360deg);
 	transition: transform 1s ease-in-out;
+}
+/*Making index.html responsive*/
+@media only screen and (max-width: 1200px){
+	.me img{
+		margin-top: 9em;
+	}
+}
+@media only screen and (max-width: 700px){
+	.linking{
+		display: inline-block;
+	}
+	.biolink,
+	.cvlink{
+		width: 100%;
+	}
+	.biolink{
+		border-bottom: 0.1875em groove #ddd;
+
+	}
 }
 /*This is css for cv.html*/
 
