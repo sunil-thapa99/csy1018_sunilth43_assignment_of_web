@@ -231,28 +231,7 @@ footer{
 	}
 
 }
-@media only screen and (max-width: 1200px){
-	footer{
-		display: inline-block;
-	}
-	.footer{
-		width: 100%;
-		border-bottom: 0.1875em groove #684E2D;
-	}
-	.news{
-		padding-right: 3%;
-		border:none;
-	}
-	.map{
-		width: 100%;
-	}
-}
-@media only screen and (max-width: 900px){
-	.navigation ul li{
-		padding-left: 0;
-	} 
-}
-@media only screen and (max-width: 700px){
+@media all and (max-width: 700px){
 	.navigation ul{
 		display: inline-flex;
 		flex-direction: column-reverse;
@@ -272,8 +251,31 @@ footer{
 		border-bottom: 0.1875em groove #684E2D;
 
 	}
-}	
+}
+@media only screen and (max-width: 1200px){
+	footer{
+		display: inline-block;
+	}
+	.footer{
+		width: 100%;
+		border-bottom: 0.1875em groove #684E2D;
+	}
+	.news{
+		padding-right: 3%;
+		border:none;
+	}
+	.map{
+		width: 100%;
+	}
+}
+	
 /*This is css for index.html*/
+#homepage{
+	color: #333;
+	text-align: center;
+	background: linear-gradient(#4B9DC2,#87C7FF,#98C6D6);
+	font-size: 1.7em;
+}
 .me{
 	text-align: center;
 	width: 98%;
@@ -299,7 +301,7 @@ footer{
 }
 .me p{
 	width: 95%;
-	margin: auto;
+	margin: 1%;
 	text-align: center;
 }
 /*Linking is class that contains link to biography and cv*/
@@ -310,7 +312,7 @@ footer{
 }
 /*Biolink is class that links to bio.html*/
 .biolink{
-	width: 50%;
+	width: 49%;
 	display: inline-flex;
 	flex-direction: row;
 }
@@ -323,13 +325,13 @@ footer{
 	height: 15.625em;
 }
 .biolink p{
+	width: 70%;
 	margin: auto 0;
-	padding-left: 5%;
 	text-align: center;
 }
 /*cvlink is class that links to cv.html*/
 .cvlink{
-	width: 50%;
+	width: 49%;
 	display: inline-flex;
 	flex-direction: row;
 	border-left: 0.1875em groove #bbb;
@@ -339,8 +341,8 @@ footer{
 	height: 15.625em;
 }
 .cvlink p{
+	width: 70%;
 	margin: auto 0;
-	padding-left: 5%;
 	text-align: center;
 }
 .cvlink a:hover{
@@ -352,10 +354,8 @@ footer{
 	.me img{
 		margin-top: 9em;
 	}
-}
-@media only screen and (max-width: 700px){
 	.linking{
-		display: inline-block;
+		display: block;
 	}
 	.biolink,
 	.cvlink{
@@ -367,6 +367,12 @@ footer{
 	}
 }
 /*This is css for cv.html*/
+#cvitae{
+	color: #333;
+	text-align: center;
+	background: linear-gradient(#4B9DC2,#87C7FF,#98C6D6);
+	font-size: 1.7em;
+}
 
 .section h3{
 	font-size: 1.6em;
@@ -384,7 +390,7 @@ footer{
 	display: inline-flex;
 	flex-direction: row;
 	justify-content: space-around;
-	width: 95%;
+	width: 100%;
 	margin-top: 2%;
 }
 .detail{
@@ -452,7 +458,8 @@ footer{
 	display: inline-flex;
 	flex-direction: row;
 	justify-content: space-around;
-	padding: 2% 0 2% 0;
+	padding: 2% 0;
+	width: 100%;
 }
 .skills{
 	width: 45%;
@@ -471,6 +478,12 @@ footer{
 	width: 45%;
 }
 /*This is for contact*/
+#contactme{
+	color: #333;
+	text-align: center;
+	background: linear-gradient(#4B9DC2,#87C7FF,#98C6D6);
+	font-size: 1.7em;
+}
 .section_contact{
 	width: 100%;
 	display: inline-flex;
@@ -512,10 +525,6 @@ footer{
 .form{
 	margin: 0 auto;
 	width: 50%;
-}
-.form p{
-	color: #222;
-	padding: 1%;
 }
 label{
 	font-size: 1.5em;
@@ -564,4 +573,31 @@ input[type="submit"]{
 	transition: transform 0.6s ease;
 	background: #fff;
 	color: #0AC986;
+}
+/*This is css for bio.html*/
+.bio0{
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-top: 2%;
+	width: 100%;
+	margin: auto;
+}
+.bio2{
+	width: 30%;
+}
+.bio2 img{
+	max-height: 34em;
+}
+#header{
+	color: #333;
+	text-align: center;
+	background: linear-gradient(#4B9DC2,#87C7FF,#98C6D6);
+	font-size: 1.7em;
+}
+.bio1 {
+	width: 60%;  
+}
+.bio1 p{
+	padding:0 0 4% 4%;
 }
