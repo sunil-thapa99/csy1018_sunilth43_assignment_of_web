@@ -1,3 +1,7 @@
+/*
+	NAME = SUNIL THAPA
+	UN ID =17421492
+*/
 /*This is common css for all four html file*/
 *{
 	margin: 0;
@@ -32,7 +36,6 @@ body{
 .logo>img{
 	width: 9.375em;
 	padding-left: 15%;
-	height: 100%;
 	/*This is to animate my designed logo*/
 	animation: sunil 3s linear infinite alternate;
 }
@@ -52,9 +55,6 @@ body{
 	100%{
 		transform: translateX(100%) rotateX(360deg);
 	}
-}
-header{
-	height: 9.375em;
 }
 /*Now designing looks for navigations to look attractive and user-friendly*/
 .navigation{
@@ -157,9 +157,9 @@ footer{
 }
 .news{
 	width: 55%;
-	border-right: 0.1875em groove #684E2D;
 	padding: 1%;
 	text-align: center;
+	border-right: 0.1875em groove #684E2D;
 }
 .news h3{
 	font-size: 1.5625em;
@@ -211,7 +211,7 @@ footer{
 		width: 100%;
 	}
 	.logo img{
-		padding-left: 20%;
+		padding-left: 22%;
 	}
 	.navigation{
 		width: 100%;
@@ -229,13 +229,28 @@ footer{
 	.navigation ul li#onlink a:hover{
 		background: none;
 	}
-
+	footer{
+		display: inline-block;
+	}
+	.footer{
+		width: 100%;
+		border-bottom: 0.1875em groove #684E2D;
+	}
+	.news{
+		padding:0 3%;
+	}
+	.map{
+		width: 100%;
+	}
 }
-@media all and (max-width: 700px){
+@media screen and (max-width: 700px){
 	.navigation ul{
 		display: inline-flex;
 		flex-direction: column-reverse;
 		width: 100%;
+	}
+	.logo img{
+		padding: 0%;
 	}
 	.navigation ul li{
 		width: 100%;
@@ -245,27 +260,13 @@ footer{
 	}
 	.news{
 		width: 100%;
+		text-align: left;
+		border-right: 0;
 	}
 	.social_media{
 		width: 100%;
+		border-right: 0;
 		border-bottom: 0.1875em groove #684E2D;
-
-	}
-}
-@media only screen and (max-width: 1200px){
-	footer{
-		display: inline-block;
-	}
-	.footer{
-		width: 100%;
-		border-bottom: 0.1875em groove #684E2D;
-	}
-	.news{
-		padding-right: 3%;
-		border:none;
-	}
-	.map{
-		width: 100%;
 	}
 }
 	
@@ -278,9 +279,8 @@ footer{
 }
 .me{
 	text-align: center;
-	width: 98%;
+	width: 100%;
 	text-align: center;
-	padding: 1%;
 	border-bottom: 0.1875em groove #ddd;
 }
 .me img{
@@ -351,9 +351,6 @@ footer{
 }
 /*Making index.html responsive*/
 @media only screen and (max-width: 1200px){
-	.me img{
-		margin-top: 9em;
-	}
 	.linking{
 		display: block;
 	}
@@ -364,6 +361,15 @@ footer{
 	.biolink{
 		border-bottom: 0.1875em groove #ddd;
 
+	}
+}
+@media only screen and (max-width: 700px){
+	.cvlink{
+		border-left: 0;
+	}
+	.cvlink,
+	.biolink{
+		padding-left: 2%;
 	}
 }
 /*This is css for cv.html*/
