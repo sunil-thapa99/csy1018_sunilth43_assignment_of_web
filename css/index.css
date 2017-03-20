@@ -220,9 +220,6 @@ footer{
 		display: flex;
 		flex-direction: row-reverse;
 	}
-	.navigation ul li{
-		padding-left: 10%;
-	}
 	.navigation ul li a:hover{
 		background: none;
 	}
@@ -520,6 +517,33 @@ footer{
 	}
 
 }
+@media only screen and (max-width: 600px){
+	.enlarge{
+		transform: scale(1.5,1.5);
+	}
+	.enlarge:target{
+		left: 10%;
+	}
+	.toggle1 .close{
+		left: 70%;
+	}
+}
+@media only screen and (max-width: 450px){
+	.enlarge{
+		transform: scale(1.5,1.5);
+	}
+	.enlarge:target{
+		left: 0%;
+	}
+	.toggle1 .close{
+		left: 75%;
+	}
+}
+@media only screen and (max-width: 370px){
+	.toggle1 .close{
+		left: 80%;
+	}
+}
 /*This is for contact*/
 #contactme{
 	color: #333;
@@ -536,7 +560,7 @@ footer{
 .me3{
 	width: 25%;
 	height: 25em;
-	padding: 2% 5% 2% 0%;
+	padding: 2% 0 2% 5%;
 }
 .me3 img{
 	border-radius: 10px;
@@ -617,6 +641,37 @@ input[type="submit"]{
 	background: #fff;
 	color: #0AC986;
 }
+@media only screen and (max-width: 1200px){
+	.form{
+		margin: 0;
+	}
+}
+@media only screen and (max-width: 950px){
+	.me3{
+		width: 100%;
+		height: 20em;
+	}
+	.me3  img{
+		margin-left: 25%;
+	}
+	.form{
+		margin: 0 auto;
+		padding-left: 2%;
+		width: 100%;
+	}
+	.section_contact{
+		display: inline-flex;
+		flex-direction: column;
+	}
+} 
+@media only screen and (max-width: 950px){
+	input, textarea{
+		width: 90%;
+	}
+	.me3 img{
+		margin-left: 0;
+	}
+}
 /*This is css for bio.html*/
 .bio0{
 	display: inline-flex;
@@ -643,4 +698,25 @@ input[type="submit"]{
 }
 .bio1 p{
 	padding:0 0 4% 4%;
+}
+@media only screen and (max-width: 1200px){
+	.bio0{
+		display: inline-flex;
+		flex-direction: column-reverse;
+	}
+	.bio2{
+		width: 100%;
+	}
+	.bio1{
+		width: 100%;
+	}
+	.bio1 p{
+		padding: 2%;
+		word-wrap: break-word;
+	}
+}
+@media only screen and (max-width: 700px){
+	.bio2 img{
+		max-height: 20em;
+	}
 }
