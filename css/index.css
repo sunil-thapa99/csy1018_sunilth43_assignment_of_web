@@ -254,6 +254,7 @@ footer{
 	}
 	.navigation ul li{
 		width: 100%;
+		padding-left: 0;
 	}
 	.footer{
 		display: block;
@@ -262,11 +263,13 @@ footer{
 		width: 100%;
 		text-align: left;
 		border-right: 0;
+		padding: 0;
 	}
 	.social_media{
 		width: 100%;
 		border-right: 0;
 		border-bottom: 0.1875em groove #684E2D;
+		padding:0;
 	}
 }
 	
@@ -401,6 +404,7 @@ footer{
 }
 .detail{
 	width: 33%;
+	margin: 0 2% ;
 }
 .detail img{
 	border-radius: 100%;
@@ -449,7 +453,6 @@ footer{
 }/*Till here it acts for poping up*/
 .education{
 	width: 33%;
-	margin: 5% auto;
 }
 .education li{
 	list-style: square;
@@ -457,8 +460,8 @@ footer{
 	padding: 0.6%;
 }
 .professional_experience{
-	width: 30%;
-	margin-top: 5%;
+	width: 25%;
+	margin-top: 0 5%;
 }
 .section2{
 	display: inline-flex;
@@ -474,14 +477,48 @@ footer{
 .skills li{
 	width: 50%;
 	margin: 0 auto;
-}
-.skills li{
 	list-style: circle;	
 	font-size: 1.15em;
 	padding: 0.3%; 
 }
 .activity{
 	width: 45%;
+}
+@media only screen and (max-width: 1200px){
+	.enlarge{
+		transform: scale(2,2);
+	}
+	.enlarge:target{
+		left: 30%;
+	}
+	.toggle1 .close{
+		left: 60%;
+	}
+}
+@media only screen and (max-width: 900px){
+	.skills li{
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 750px){
+	.section1{
+		display: block;
+
+	}
+	.section2{
+		display: block;
+	}
+	.detail, .education, .professional_experience, .skills, .activity{
+		margin: 5% 5%;
+		width: 100%;
+	}
+	.enlarge:target{
+		left: 20%;
+	}
+	.toggle1 .close{
+		left: 60%;
+	}
+
 }
 /*This is for contact*/
 #contactme{
