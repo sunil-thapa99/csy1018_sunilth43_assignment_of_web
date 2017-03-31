@@ -17,7 +17,8 @@ p{
 	font-size: 1.5625em;
 	font-weight: bold;
 	color: #555;
-	text-align: justify-all;
+	text-align: justify;
+	text-justify:inter-word;
 }
 body{
 	width: 100%;
@@ -370,7 +371,7 @@ footer{
 	}
 	.cvlink,
 	.biolink{
-		padding-left: 2%;
+		padding-left: 0;
 	}
 }
 /*This is css for cv.html*/
@@ -506,8 +507,20 @@ footer{
 	.section2{
 		display: block;
 	}
-	.detail, .education, .professional_experience, .skills, .activity{
+	.detail, .education{
 		margin: 5% 5%;
+		width: 100%;
+	}
+	.professional_experience{
+		margin: 5% 0;
+		width: 95%;
+	}
+	.skills{
+		margin: 5% 0;
+		width: 100%;
+	}
+	.activity{
+		margin: 5% 0.5%;
 		width: 100%;
 	}
 	.enlarge:target{
