@@ -750,4 +750,8 @@ input[type="submit"]{
 	.bio2 img{
 		max-height: 20em;
 	}
+	.me3 img:hover{
+	cursor: pointer;
+	animation: sunilthapa 0s linear;
+	}
 }
